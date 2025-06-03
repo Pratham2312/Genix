@@ -1,0 +1,87 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Genix AI Healthcare - Signup</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="right-section">
+      <h2>Create your account</h2>
+      <p>Already have an account? <a href="{{ url_for('login') }}">Login</a></p>
+
+      <form method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="password" name="password" placeholder="Password" required />
+
+        <label>Register as:</label>
+        <div class="role-tabs">
+          <input type="radio" id="doctor" name="role" value="Doctor" required checked>
+          <label for="doctor">Doctor</label>
+          <input type="radio" id="patient" name="role" value="Patient">
+          <label for="patient">Patient</label>
+          <input type="radio" id="admin" name="role" value="Admin">
+          <label for="admin">Admin</label>
+        </div>
+
+        <button type="submit">Sign up</button>
+      </form>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <p class="flash {{ category }}">{{ message }}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genix Signup</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>Create your account</h2>
+            <p>Join Genix to access smarter healthcare,<br>
+               secure records, and AI-powered support.</p>
+            <img src="{{ url_for('static', filename='img.png') }}" alt="Devices" class="mockup-img">
+        </div>
+        <div class="right-side">
+            <img src="{{ url_for('static', filename='GenixLogo.png') }}" class="logo" alt="Genix Logo">
+            <h2>Welcome to Genix</h2>
+            <p>Already have an account? <a href="/login">Log in</a></p>
+
+            <form method="POST">
+                <label for="name">Full Name <span class="required">*</span></label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+
+                <label for="role">Sign up as: <span class="required">*</span></label>
+                <select id="role" name="role" required>
+                    <option value="">Select Role</option>
+                    <option value="doctor">Doctor</option>
+                    <option value="patient">Patient</option>
+                    <option value="admin">Admin</option>
+                </select>
+
+                <button type="submit" class="sign-in">Sign up</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

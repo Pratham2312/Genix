@@ -1,0 +1,139 @@
+<!--  <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Genix AI Healthcare - Login</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <h1>Log in to your account</h1>
+      <p>To access smarter healthcare, secure records, and AI-powered assistance — all in one place.</p>
+      <img src="{{ url_for('static', filename='img.png') }}" alt="Devices" class="mockup-img">
+
+    </div>
+
+    <div class="right-section">
+      <h2>Welcome back</h2>
+      <p>Don't have an account? <a href="{{ url_for('signup') }}">Sign up</a></p>
+
+      <form method="POST">
+        <label>Log in as:</label>
+        <div class="role-tabs">
+          <input type="radio" id="doctor" name="role" value="Doctor" required checked>
+          <label for="doctor">Doctor</label>
+          <input type="radio" id="patient" name="role" value="Patient">
+          <label for="patient">Patient</label>
+          <input type="radio" id="admin" name="role" value="Admin">
+          <label for="admin">Admin</label>
+        </div>
+
+        <input type="email" name="email" placeholder="E-mail" required />
+        <input type="password" name="password" placeholder="Password" required />
+        <button type="submit">Sign in</button>
+      </form>
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+          {% for category, message in messages %}
+            <p class="flash {{ category }}">{{ message }}</p>
+          {% endfor %}
+        {% endif %}
+      {% endwith %}
+    </div>
+  </div>
+</body>
+</html> -->
+
+
+
+<!--  newwwww
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genix Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>Log in to your account</h2>
+            <p>to access smarter healthcare, secure records,<br>
+               and AI-powered assistance — all in one place.</p>
+            <img src="{{ url_for('static', filename='img.png') }}" alt="Devices" class="mockup-img">
+        </div>
+        <div class="right-side">
+            <img src="{{ url_for('static', filename='logo.png') }}" class="logo" alt="Genix Logo">
+            <h2>Welcome back</h2>
+            <p>Don't have an account? <a href="/signup">Sign up</a></p>
+
+            <label>Log in as: <span class="required">*</span></label>
+            <div class="roles">
+                <button class="active">Doctor</button>
+                <button>Patient</button>
+                <button>Admin</button>
+            </div>
+
+            <form>
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+                <a href="#" class="forgot">Forget Password?</a>
+
+                <button type="submit" class="sign-in">Sign in</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Genix Login</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="left-side">
+            <h2>Log in to your account</h2>
+            <p>to access smarter healthcare, secure records,<br>and AI-powered assistance — all in one place.</p>
+            <img src="{{ url_for('static', filename='img.png') }}" alt="Devices" class="mockup-img">
+        </div>
+        <div class="right-side">
+            <img src="{{ url_for('static', filename='GenixLogo.png') }}" class="logo" alt="Genix Logo">
+            <h2>Welcome back</h2>
+            <p>Don't have an account? <a href="/signup">Sign up</a></p>
+
+            <label>Log in as: <span class="required">*</span></label>
+            <div class="roles">
+                <button class="active">Doctor</button>
+                <button>Patient</button>
+                <button>Admin</button>
+            </div>
+
+            <form method="POST">
+                <input type="hidden" id="role" name="role" value="doctor">
+
+                <label for="email">E-mail <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password" required>
+                <a href="#" class="forgot">Forget Password?</a>
+
+                <button type="submit" class="sign-in">Sign in</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
+

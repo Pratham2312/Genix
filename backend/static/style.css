@@ -1,0 +1,607 @@
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.left-section, .right-section {
+  flex: 1;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.left-section {
+  background-color: #00aaff;
+  color: white;
+}
+
+.left-section h1 {
+  font-size: 36px;
+}
+
+.left-section p {
+  font-size: 16px;
+  max-width: 400px;
+}
+
+.mockup-img {
+  max-width: 100%;
+  margin-top: 30px;
+}
+
+.right-section {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #008ecc;
+}
+
+.role-tabs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.role-tabs label {
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.flash {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.flash.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.flash.danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.flash.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    text-align: center;
+  }
+} */
+/* Base styles */
+/* body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f8ff;
+}
+
+/* Layout container 
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+} */
+
+/* Left section: branding panel */
+/* .left-section {
+  flex: 1;
+  background-color: #00aaff;
+  color: white;
+  padding: 60px 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-section h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.left-section p {
+  font-size: 16px;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.mockup-img {
+  max-width: 100%;
+  margin-top: 30px;
+} */
+
+/* Right section: form */
+/* .right-section {
+  flex: 1;
+  padding: 60px 40px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+.right-section h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.right-section p {
+  margin-bottom: 20px;
+}
+
+.right-section a {
+  color: #00aaff;
+  text-decoration: none;
+}
+
+.right-section a:hover {
+  text-decoration: underline;
+} */
+
+/* Form styling 
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}*/
+
+/* Role tabs 
+.role-tabs {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.role-tabs label {
+  margin-right: 15px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.role-tabs input[type="radio"] {
+  margin-right: 5px;
+}*/
+
+/* Buttons */
+/* button {
+  background-color: #00aaff;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #008ecc;
+}
+
+/* Flash messages */
+/*.flash {
+  padding: 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.flash.success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.flash.danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.flash.warning {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.flash.info {
+  background-color: #cce5ff;
+  color: #004085;
+} */
+
+/* Mobile responsiveness */
+/* @media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .left-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .right-section {
+    padding: 40px 20px;
+  }
+} */
+/* * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #00AEEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.left-side, .right-side {
+    padding: 40px;
+    width: 50%;
+}
+
+.left-side {
+    background: #00AEEF;
+    color: white;
+}
+
+.left-side h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.left-side p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mockup-img {
+    width: 100%;
+    max-width: 350px;
+}
+
+.right-side {
+    background: white;
+}
+
+.right-side .logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.right-side h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.right-side p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.roles {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.roles button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.roles .active {
+    background: #00AEEF;
+    color: white;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+}
+
+.required {
+    color: red;
+}
+
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot {
+    font-size: 12px;
+    color: #00AEEF;
+    text-align: right;
+    text-decoration: none;
+}
+
+.sign-in {
+    padding: 10px;
+    background: #00AEEF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+} */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #00AEEF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    background: #fff;
+    border-radius: 25px;
+    overflow: hidden;
+    width: 90%;
+    max-width: 1000px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.left-side, .right-side {
+    padding: 40px;
+    width: 50%;
+}
+
+.left-side {
+    background: #00AEEF;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left-side h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.left-side p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.mockup-img {
+    width: 100%;
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+.right-side {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.right-side .logo {
+    height: 40px;
+    margin-bottom: 20px;
+}
+
+.right-side h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.right-side p {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.roles {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.roles button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #f0f0f0;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.roles .active {
+    background: #00AEEF;
+    color: white;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 14px;
+    color: #444;
+}
+
+.required {
+    color: red;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.forgot {
+    font-size: 12px;
+    color: #00AEEF;
+    text-align: right;
+    text-decoration: none;
+}
+
+.sign-in {
+    padding: 10px;
+    background: #00AEEF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ✅ RESPONSIVE MEDIA QUERIES */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        border-radius: 15px;
+    }
+
+    .left-side, .right-side {
+        width: 100%;
+        padding: 30px 20px;
+    }
+
+    .left-side {
+        align-items: center;
+        text-align: center;
+    }
+
+    .mockup-img {
+        max-width: 250px;
+    }
+
+    .roles {
+        flex-direction: column;
+    }
+
+    .roles button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .left-side h2,
+    .right-side h2 {
+        font-size: 22px;
+    }
+
+    .left-side p,
+    .right-side p {
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        font-size: 14px;
+    }
+
+    .sign-in {
+        font-size: 14px;
+    }
+}
